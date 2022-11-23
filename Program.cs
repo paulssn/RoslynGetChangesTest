@@ -1,5 +1,5 @@
 ﻿using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.VisualBasic;
+using Microsoft.CodeAnalysis.CSharp;
 
 for (var i = 0; i < 10; i++)
 {
@@ -8,10 +8,10 @@ for (var i = 0; i < 10; i++)
 
 static void CalculateChanges()
 {
-	var tree1 = GetTree("tree1.vb");
-	var tree2 = GetTree("tree2.vb");
+	// reproducible with C# as well as VB.NET
+	var tree1 = GetTree("tree1.cs");
+	var tree2 = GetTree("tree2.cs");
 
-	// Subsequent calls of GetChanges lead to potentially different results
 	var treeChanges = tree2.GetChanges(tree1);
 
 	Console.WriteLine($"Number of changes: {treeChanges.Count}");
@@ -19,5 +19,5 @@ static void CalculateChanges()
 
 static SyntaxTree GetTree(string file)
 {
-	return VisualBasicSyntaxTree.ParseText(File.ReadAllText(file));
+	return CSharpSyntaxTree.ParseText(File.ReadAllText(file));
 }
