@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoslynGetChanges", "RoslynGetChanges.csproj", "{1401BF31-2332-4556-AE7E-B0A91511814F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1401BF31-2332-4556-AE7E-B0A91511814F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1401BF31-2332-4556-AE7E-B0A91511814F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1401BF31-2332-4556-AE7E-B0A91511814F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1401BF31-2332-4556-AE7E-B0A91511814F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A2822AB-C32F-4B4F-9E7B-04D14C3BF4EE}
+	EndGlobalSection
+EndGlobal
